@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BAKKU: hoodies de diseño propio y tazas personalizadas.">
+  <title>BAKKU | Viste tu actitud</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="images/favicon.png">
+</head>
+<body>
+  <!-- CABECERA Y MENÚ -->
+  <header class="encabezado" id="inicio">
+    <div class="contenedor encabezado-contenido">
+      <a class="marca" href="#inicio" aria-label="BAKKU, inicio">BAKKU<span>.</span></a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="navegacion" id="navegacion" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#hoodies">Hoodies</a>
+        <a href="#tazas">Tazas</a>
+        <a href="#nosotros">La marca</a>
+      </nav>
+      <a class="boton boton-claro boton-cabecera" href="#contacto">Pedir por WhatsApp ↗</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- PORTADA PRINCIPAL -->
+    <section class="hero">
+      <div class="contenedor hero-contenido">
+        <div class="hero-texto">
+          <p class="sobrelinea">STREETWEAR · DISEÑO · PERSONALIDAD</p>
+          <h1>VISTE TU<br><span>ACTITUD.</span></h1>
+          <p class="hero-descripcion">Diseños que hablan por ti. Hoodies BAKKU y tazas personalizadas para llevar tus ideas a todas partes.</p>
+          <div class="hero-acciones">
+            <a class="boton boton-principal" href="#hoodies">Explorar colección</a>
+            <a class="boton boton-borde" href="#tazas">Ver tazas</a>
+          </div>
+          <p class="hero-nota">Hecho para destacar. Diseñado para durar.</p>
+        </div>
+        <div class="hero-visual">
+          <img src="images/hoodie-bakku-referencia.jpeg" alt="Diseño de referencia del hoodie negro BAKKU">
+          <div class="sello">BAKKU<br><small>DEVORA LO QUE<br>TE DEBILITA</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="categorias contenedor" aria-label="Categorías de productos">
+      <a class="categoria" href="#hoodies"><span>01 / ROPA</span><strong>Hoodies BAKKU ↗</strong></a>
+      <a class="categoria" href="#tazas"><span>02 / PERSONALIZA</span><strong>Tazas a tu estilo ↗</strong></a>
+      <div class="categoria categoria-frase"><span>LA IDEA ES TUYA.</span><strong>Hazla realidad.</strong></div>
+    </section>
+
+    <!-- CATÁLOGO DE HOODIES -->
+    <section class="seccion catalogo" id="hoodies">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <div><p class="sobrelinea">COLECCIÓN ORIGINAL</p><h2>Hoodies <span>BAKKU</span></h2></div>
+          <p>Diseños propios, siluetas cómodas y una estética urbana.</p>
+        </div>
+        <div class="productos-grid">
+          <article class="producto-card">
+            <div class="producto-imagen producto-imagen-hoodie">
+              <img src="images/hoodie-bakku-referencia.jpeg" alt="Hoodie negro BAKKU con cuello alto" loading="lazy">
+              <span class="etiqueta-producto">DISEÑO BAKKU</span>
+            </div>
+            <div class="producto-info">
+              <div><h3>Hoodie Cuello Alto</h3><p>Negro · Fit oversize</p></div>
+              <span class="precio">Consultar</span>
+            </div>
+            <button class="boton boton-producto pedir-producto" data-producto="Hoodie Cuello Alto BAKKU">Consultar por WhatsApp ↗</button>
+          </article>
+          <article class="producto-card">
+            <div class="producto-imagen arte-hoodie">
+              <div class="mock-hoodie"><span>BAKKU</span><small>DEVORA LO QUE<br>TE DEBILITA</small></div>
+              <span class="etiqueta-producto">ESTILO URBANO</span>
+            </div>
+            <div class="producto-info">
+              <div><h3>Hoodie Essential</h3><p>Diseño minimalista</p></div>
+              <span class="precio">Consultar</span>
+            </div>
+            <button class="boton boton-producto pedir-producto" data-producto="Hoodie Essential BAKKU">Consultar por WhatsApp ↗</button>
+          </article>
+          <article class="producto-card">
+            <div class="producto-imagen arte-hoodie arte-hoodie-claro">
+              <div class="mock-hoodie"><span>BAKKU</span><small>CREA TU<br>CAMINO</small></div>
+              <span class="etiqueta-producto">NUEVA IDEA</span>
+            </div>
+            <div class="producto-info">
+              <div><h3>Hoodie Graphic</h3><p>Gráfico exclusivo</p></div>
+              <span class="precio">Consultar</span>
+            </div>
+            <button class="boton boton-producto pedir-producto" data-producto="Hoodie Graphic BAKKU">Consultar por WhatsApp ↗</button>
+          </article>
+        </div>
+        <p class="nota-catalogo">Los precios, colores y tallas se confirman por WhatsApp antes de realizar el pedido.</p>
+      </div>
+    </section>
+
+    <!-- CATÁLOGO DE TAZAS -->
+    <section class="seccion tazas" id="tazas">
+      <div class="contenedor">
+        <div class="seccion-encabezado">
+          <div><p class="sobrelinea">UN REGALO CON TU SELLO</p><h2>Tazas <span>personalizadas</span></h2></div>
+          <p>Tu foto, tu frase o tu diseño favorito, convertido en una taza.</p>
+        </div>
+        <div class="productos-grid">
+          <article class="producto-card">
+            <div class="taza-visual taza-blanca"><div class="taza-dibujo"><strong>Tu idea</strong><small>Tu diseño aquí</small></div></div>
+            <div class="producto-info"><div><h3>Taza con tu diseño</h3><p>Nombre, frase o ilustración</p></div><span class="precio">Consultar</span></div>
+            <button class="boton boton-producto pedir-producto" data-producto="Taza personalizada con diseño propio">Personalizar por WhatsApp ↗</button>
+          </article>
+          <article class="producto-card">
+            <div class="taza-visual taza-negra"><div class="taza-dibujo"><strong>BAKKU</strong><small>Tu estilo diario</small></div></div>
+            <div class="producto-info"><div><h3>Taza BAKKU</h3><p>Diseño de la marca</p></div><span class="precio">Consultar</span></div>
+            <button class="boton boton-producto pedir-producto" data-producto="Taza con diseño propio BAKKU">Pedir por WhatsApp ↗</button>
+          </article>
+          <article class="producto-card">
+            <div class="taza-visual taza-foto"><div class="taza-dibujo"><strong>FOTO + FRASE</strong><small>Un recuerdo especial</small></div></div>
+            <div class="producto-info"><div><h3>Taza para regalar</h3><p>Fotos y mensajes especiales</p></div><span class="precio">Consultar</span></div>
+            <button class="boton boton-producto pedir-producto" data-producto="Taza personalizada para regalo con foto y frase">Crear mi taza ↗</button>
+          </article>
+        </div>
+        <p class="nota-catalogo">Las imágenes de las tazas son representaciones provisionales. Luego puedes reemplazarlas por fotos de tus productos reales.</p>
+      </div>
+    </section>
+
+    <!-- LA MARCA -->
+    <section class="seccion nosotros" id="nosotros">
+      <div class="contenedor nosotros-contenido">
+        <p class="sobrelinea">ESTO ES BAKKU</p>
+        <h2>Devora lo que<br><span>te debilita.</span></h2>
+        <p>Cada diseño es una oportunidad para mostrar quién eres.</p>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+      <div class="contenedor contacto-contenido">
+        <div><p class="sobrelinea">HABLEMOS DE TU PEDIDO</p><h2>Tu próxima idea<br>empieza aquí.</h2></div>
+        <div><p>Escríbenos por WhatsApp para consultar precios, tallas, disponibilidad o personalizar tu producto.</p><button class="boton boton-principal" id="contacto-whatsapp">Contactar por WhatsApp ↗</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie-pagina">
+    <div class="contenedor pie-contenido">
+      <a class="marca" href="#inicio">BAKKU<span>.</span></a>
+      <p>VISTE TU ACTITUD · CREA TU ESTILO</p>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+    <div class="contenedor copyright">© <span id="anio"></span> BAKKU. Todos los derechos reservados.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

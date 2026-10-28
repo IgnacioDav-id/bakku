@@ -1,0 +1,592 @@
+/* =========================
+   1. ESTILOS GENERALES
+   ========================= */
+
+/* Quitamos los márgenes que el navegador agrega por defecto */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f0eb;
+  color: #111111;
+  font-family: Arial, sans-serif;
+}
+
+/* Las imágenes no deben salirse de su espacio */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Quitamos el subrayado de los enlaces */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Ancho principal de la página */
+.contenedor {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Espacio de las secciones */
+.seccion {
+  padding: 60px 0;
+}
+
+/* =========================
+   2. CABECERA Y MENÚ
+   ========================= */
+
+.encabezado {
+  background-color: #f2f0eb;
+  border-bottom: 1px solid #d8d5ce;
+}
+
+.encabezado-contenido {
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marca {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+
+.marca span {
+  color: #E10600;
+}
+
+.navegacion {
+  display: flex;
+  gap: 22px;
+}
+
+.navegacion a {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.navegacion a:hover {
+  
+  color: #E10600;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Estilo general de los botones */
+.boton {
+  display: inline-block;
+  padding: 13px 18px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.boton-claro {
+  background-color: #111111;
+  color: white;
+}
+
+.boton-principal {
+  background-color: #E10600;
+  color: white;
+}
+
+.boton-borde {
+  border: 1px solid #888888;
+  color: white;
+}
+
+/* =========================
+   3. PORTADA PRINCIPAL
+   ========================= */
+
+.hero {
+  background-color: #111111;
+  color: white;
+  padding: 55px 0;
+}
+
+.hero-contenido {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-texto,
+.hero-visual {
+  width: 50%;
+}
+
+.sobrelinea {
+  color: #E10600;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 65px;
+  line-height: 0.95;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #E10600;
+}
+
+.hero-descripcion {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.hero-acciones {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.hero-nota {
+  margin-top: 30px;
+  color: #aaaaaa;
+  font-size: 13px;
+}
+
+.hero-visual {
+  position: relative;
+}
+
+.hero-visual img {
+  width: 100%;
+  height: 430px;
+  object-fit: cover;
+}
+
+.sello {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  padding: 15px;
+  background-color: #E10600;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  transform: rotate(4deg);
+}
+
+.sello small {
+  font-size: 9px;
+}
+
+/* =========================
+   4. CATEGORÍAS
+   ========================= */
+
+.categorias {
+  display: flex;
+  border-bottom: 1px solid #d8d5ce;
+}
+
+.categoria {
+  width: 33.33%;
+  padding: 25px 15px;
+  border-right: 1px solid #d8d5ce;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.categoria span {
+  color: #737373;
+  font-size: 11px;
+}
+
+.categoria strong {
+  font-size: 18px;
+}
+
+.categoria-frase {
+  border-right: none;
+}
+
+/* =========================
+   5. CATÁLOGOS DE PRODUCTOS
+   ========================= */
+
+.seccion-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 42px;
+  margin: 0;
+}
+
+.seccion-encabezado h2 span,
+.nosotros h2 span {
+  color: #E10600;
+}
+
+.seccion-encabezado > p {
+  max-width: 300px;
+  color: #737373;
+  line-height: 1.5;
+}
+
+.productos-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.producto-card {
+  width: 33.33%;
+}
+
+.producto-imagen {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  background-color: #dedbd4;
+}
+
+.producto-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.etiqueta-producto {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 7px;
+  background-color: #E10600;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.producto-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.producto-info h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.producto-info p {
+  margin: 0;
+  color: #737373;
+  font-size: 13px;
+}
+
+.precio {
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.boton-producto {
+  width: 100%;
+  border: 1px solid #aaaaaa;
+  background-color: transparent;
+}
+
+.boton-producto:hover {
+  background-color: #111111;
+  color: white;
+}
+
+.nota-catalogo {
+  margin-top: 20px;
+  color: #737373;
+  font-size: 13px;
+}
+
+/* =========================
+   6. DIBUJOS PROVISIONALES
+   ========================= */
+
+.arte-hoodie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d7d4ce;
+}
+
+.arte-hoodie-claro {
+  background-color: #d6d9cb;
+}
+
+.mock-hoodie {
+  width: 65%;
+  height: 75%;
+  background-color: #171717;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px 30px 10px 10px;
+  text-align: center;
+}
+
+.mock-hoodie span {
+  font-size: 22px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.mock-hoodie small {
+  font-size: 8px;
+  margin-top: 5px;
+}
+
+/* =========================
+   7. TAZAS
+   ========================= */
+
+.taza-visual {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3d0c8;
+}
+
+.taza-negra {
+  background-color: #b8b8b0;
+}
+
+.taza-foto {
+  background-color: #d8d5ce;
+}
+
+.taza-dibujo {
+  width: 60%;
+  height: 45%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 25px 25px;
+  box-shadow: 0 10px 20px #00000022;
+  transform: rotate(-4deg);
+}
+
+.taza-dibujo strong {
+  font-size: 20px;
+}
+
+.taza-dibujo small {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.taza-negra .taza-dibujo {
+  background-color: #111111;
+  color: white;
+}
+
+.taza-foto .taza-dibujo {
+  background-color: #f5e4c9;
+}
+/**/
+.nosotros-contenido {
+  max-width: 750px;
+}
+
+.nosotros h2 {
+  font-size: 65px;
+  margin: 20px 0;
+}
+
+.nosotros-contenido > p:last-child {
+  max-width: 550px;
+  color: #737373;
+  line-height: 1.7;
+}
+
+.contacto {
+  padding: 55px 0;
+  background-color: #E10600;
+  color: white;
+}
+
+.contacto-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+.contacto h2 {
+  font-size: 45px;
+}
+
+.contacto-contenido > div:last-child {
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+.contacto .boton {
+  background-color: #111111;
+  color: white;
+}
+
+
+.pie-pagina {
+  padding: 30px 0 15px;
+  background-color: #111111;
+  color: white;
+}
+
+.pie-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.pie-contenido p,
+.pie-contenido > a:last-child {
+  color: #bbbbbb;
+  font-size: 12px;
+}
+
+.copyright {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #444444;
+  color: #888888;
+  font-size: 12px;
+}
+
+  /*ADAPTACIÓN A CELULARES*/
+
+@media (max-width: 800px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero-visual img {
+    height: 350px;
+  }
+
+  .producto-imagen,
+  .taza-visual {
+    height: 230px;
+  }
+
+  .seccion-encabezado {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .encabezado-contenido {
+    min-height: 65px;
+    flex-wrap: wrap;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    background: none;
+    border: none;
+    font-size: 25px;
+  }
+
+  .navegacion {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 15px;
+  }
+
+  .navegacion.abierto {
+    display: flex;
+  }
+
+  .boton-cabecera {
+    display: none;
+  }
+
+  .hero-contenido,
+  .personaliza-grid,
+  .contacto-contenido {
+    flex-direction: column;
+  }
+
+  .hero-texto,
+  .hero-visual,
+  .personaliza-grid > div,
+  .form-personaliza {
+    width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 55px;
+  }
+
+  .hero-visual img {
+    height: 300px;
+  }
+
+  .categorias {
+    flex-direction: column;
+  }
+
+  .categoria {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #d8d5ce;
+  }
+
+  .productos-grid {
+    flex-direction: column;
+  }
+
+  .producto-card {
+    width: 100%;
+  }
+
+  .producto-imagen,
+  .taza-visual {
+    height: 320px;
+  }
+
+  .personaliza h2,
+  .contacto h2 {
+    font-size: 36px;
+  }
+
+  .nosotros h2 {
+    font-size: 48px;
+  }
+
+  .pie-contenido {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
